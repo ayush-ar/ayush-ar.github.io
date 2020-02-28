@@ -15,7 +15,6 @@ body {
   background: var(--primary-color);
   color: #fff;
   overflow-x: hidden;
-  padding-bottom: 50px;
 }
 
 body .image {
@@ -26,7 +25,7 @@ body .image {
 
 #main-header {
   background: var(--secondary-color);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .container {
@@ -46,7 +45,7 @@ h1 {
 
 #head1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 20px auto;
 }
 
@@ -61,7 +60,7 @@ h1 {
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-bottom: 30px;
   background: #fff;
 }
 
@@ -94,7 +93,7 @@ h1 {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 20px;
   width: 25px;
   height: 25px;
   background: inherit;
@@ -107,7 +106,7 @@ h1 {
 #timeline div:before {
   content: '';
   position: absolute;
-  bottom: 5px;
+  top: 20px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -138,30 +137,74 @@ h1 {
   background: var(--secondary-color);
 } 
 
+/* Footer */
+#main-footer {
+  background: var(--secondary-color);
+  text-align: center;
+}
+
+#main-footer #head {
+  padding-top: 1rem;
+}
+
+#main-footer .container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0 4rem 0;
+}
+
+#main-footer #img1, 
+#img2, 
+#img3, 
+#img4, 
+#img5 {
+  padding: 1rem 2rem;
+  transition: transform .2s;
+}
+
+#main-footer #img1:hover, 
+#img2:hover, 
+#img3:hover, 
+#img4:hover, 
+#img5:hover {
+  transform: scale(1.2);
+} 
+
 @media(max-width: 900px) {
-  #timeline ul li div {
+  #timeline
+ ul li div {
     width: 250px;
   }
 
-  #timeline ul li:nth-child(even) div {
+  #timeline
+ ul li:nth-child(even) div {
     left: -284px;
   }
 }
 
 @media(max-width: 600px) {
-  #timeline ul li {
+  #timeline
+ ul li {
     margin-left: 20px;
   }
 
-  #timeline ul li div {
+  #timeline
+ ul li div {
     width: calc(100vw - 90px);
   }
 
-  #timeline ul li:nth-child(even) div {
+  #timeline
+ ul li:nth-child(even) div {
     left: 40px;
   }
 
-  #timeline ul li:nth-child(even) div:before {
+  #timeline
+ ul li:nth-child(even) div:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--secondary-color) transparent transparent;
