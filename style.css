@@ -25,7 +25,11 @@ body .image {
 
 #main-header {
   background: var(--secondary-color);
-  padding: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+#main-header .container .fab {
+  padding: 0 0.4rem;
 }
 
 .container {
@@ -46,12 +50,11 @@ h1 {
 #head1 {
   text-align: center;
   margin-top: 10px;
-  padding: 20px auto;
 }
 
 #timeline ul {
   background: var(--primary-color);
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 /* Create Line */
@@ -141,6 +144,7 @@ h1 {
 #main-footer {
   background: var(--secondary-color);
   text-align: center;
+  margin-top: 50px; 
 }
 
 #main-footer #head {
